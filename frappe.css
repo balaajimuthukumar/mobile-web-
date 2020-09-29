@@ -1,0 +1,200 @@
+body{
+  /* This settting is mandatory to reset the body to remove
+    unwanted padding on top of the header block  */
+    padding:0;
+    margin:0;
+}
+.header {
+  /*  Color extraction tool(color zilla) is used
+    to get exact color of the elements   */
+    margin:0 auto;
+    border:0.5px solid #E2E6E9;
+    display:flex;
+    justify-content:space-around;
+    flex-basis: auto;
+    height:65px;
+    background-color:none;
+}
+.page1container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row wrap;
+}
+#page1left{
+  margin:0 auto;
+  height:500px;
+  padding-top:100px;
+}
+#page1right{
+  margin:0 auto;
+  height:500px;
+}
+#comicstrip{
+  display:flex;
+  top:800px;
+  left:190px;
+  justify-content: center;
+  padding:60px;
+}
+#logo{
+  position:absolute;
+  top:15px;
+  left:190px;
+}
+#docgitabout{
+  margin:10px;
+  position:relative;
+  top:10px;
+  color:grey;
+  font-weight:bold;
+}
+.texdecor:link{
+    /* This setting is used for all the text decorations */
+  text-decoration:none;
+  color:grey;
+  margin:10px;
+}
+.position_{
+  display:flex;
+  position:absolute;
+  border-radius: 10px;
+  margin:0px;
+  padding:0px;
+  box-shadow: 3px 3px 3px 3px #F2F2F2;
+}
+#buttons{
+  /*These attributes are defined for the buttons container*/
+  position:absolute;
+  top:445px;
+  left:190px;
+  border-radius:5px;
+}
+.buttonspec{
+  /*These attributes are defined for the Download and github button*/
+  padding:10px;
+  width:150px;
+  height:40px;
+  border-radius:5px;
+  border-width: 0px;
+  font-weight: bold;
+  text-decoration: none;
+}
+#dbutton{
+  background-color:#107DDD;
+}
+#Gbutton{
+  background-color:#F0F8FE;
+}
+  .card{
+    width:350px;
+    height:200px;
+    border-radius: 5px;
+    border:1px solid black;
+    background-color: white;
+    margin:10px;
+  }
+  .card1{
+    width:250px;
+    height:125px;
+    border-radius: 5px;
+    border:1px solid black;
+    background-color: white;
+    margin:10px;
+  }
+  #bio-head{
+    font-size:45px;
+}
+  #para{
+    margin:20px;
+  }
+  #page3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+      background-color: white;
+      margin:100px;
+  }
+  .tabs{
+      display:inline-block;
+      padding-right:20px;
+      outline:none;
+      background-color: white;
+      border-bottom: 2px solid blue;
+      text-decoration:none;
+      list-style-type: none;
+  }
+  #tabselection{
+        outline:none;
+        background-color: white;
+  }
+#confetti{
+     padding:8px;
+   width:3px;
+   height:8px;
+   border-radius:50%;
+   height:50%;
+}
+#tabdisp{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .header, #page1, .page2, #page3{
+      display:flex;
+      flex-direction: column;
+      flex-basis: auto;
+    }
+    #page1right img{
+      display:none;
+      flex-direction: row;
+      flex-basis: auto;
+    }
+    #pge1left, #bio-head {
+      display:flex;
+      justify-content:center;
+      flex-direction: row;
+      flex-basis: auto;
+    }
+    /* For mobile phones: */
+        #comicstrip img{
+          display:flex;
+          flex-direction: column wrap;
+          justify-content: center;
+          width:481;
+          height:242;
+        }
+            /* For mobile phones: */
+             #tabdisp img{
+              display:flex;
+              flex-direction: column;
+              justify-content: center;
+              flex-basis: auto;
+              width:481;
+              height:242;
+            }
+            /* For mobile phones: */
+             .tabdisp img{
+              display:flex;
+              flex-direction: column;
+              justify-content: center;
+              flex-basis: auto;
+              width:481;
+              height:242;
+            }
+  }
+  @media only screen and (max-width:900px){
+  #tabselection{
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    line-height:initial;
+}
+
+  ul{
+    overflow: scroll;
+    white-space: nowrap;
+  }
+}

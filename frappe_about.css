@@ -1,0 +1,78 @@
+body{
+  /* This settting is mandatory to reset the body to remove
+    unwanted padding on top of the header block  */
+    padding:0;
+    margin:0;
+}
+
+.headers {
+  /*  Color extraction tool(color zilla) is used
+    to get exact color of the elements   */
+    border:0.5px solid #E2E6E9;
+    display:flex;
+    justify-content:space-between;
+    background-color:none;
+    padding:15px;
+    margin:0 auto;
+}
+#docgitabout{
+  /* This setting is used for discrete menu elements in header  */
+  color:grey;
+  font-weight:bold;
+}
+.texdecor, .texdecor:link{
+    /* This setting is used for all the text decorations */
+  text-decoration:none;
+  color:grey;
+  margin:10px;
+}
+
+.introduction,.lastset,.internallast{
+  display: flex;
+justify-content: center;
+flex-direction: column ;
+}
+
+.introduction{
+  padding:50px;
+}
+
+.internallast{
+  margin:0 auto;
+}
+
+#introcontainerwrap, .set3{
+  display:flex;
+flex-direction: column ;
+}
+
+#para{
+  display:block;
+  font-size:20px;
+}
+
+#comicstrip{
+  display: flex;
+  justify-content: center;
+  flex-direction: column wrap;
+  padding:60px;
+}
+
+.logos{
+  float:right;
+}
+/* This setting is used for menus in the header bar */
+@media only screen and (max-width:500px) {
+  #docgitabout{
+    display:none;
+  }
+  .introduction{
+    width:auto;
+    height:auto;
+    display:flex;
+    justify-content: :center;
+    flex-direction: column ;
+    padding:50px;
+
+  }
+}
